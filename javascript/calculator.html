@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>fuck this title</title>
+</head>
+<body>
+<h1>Fuck this headline.</h1>
+<p>This is fking javascript.</p>
+<input id="first">
+<input id="second"><br>
+<button type="button" onclick="add()">Add</button>
+<button type="button" onclick="sub()">Sub</button>
+<button type="button" onclick="mul()">Mul</button>
+<button type="button" onclick="div()">Div</button>
+<button type="button" onclick="first.value='';second.value='';">Clear</button>
+<p id="demo"></p>
+<script>
+function add(){
+	var x, y, z;
+	x = parseFloat(document.getElementById("first").value);
+	y = parseFloat(document.getElementById("second").value);
+
+	document.getElementById("demo").innerHTML = x+y;
+}
+function sub(){
+	var x, y, z;
+	x = parseFloat(document.getElementById("first").value);
+	y = parseFloat(document.getElementById("second").value);
+
+	document.getElementById("demo").innerHTML = x-y;
+}
+function mul(){
+	var x, y, z;
+	x = parseFloat(document.getElementById("first").value);
+	y = parseFloat(document.getElementById("second").value);
+
+	document.getElementById("demo").innerHTML = x*y;
+}
+function div(){
+	var x, y, z;
+	x = parseFloat(document.getElementById("first").value);
+	y = parseFloat(document.getElementById("second").value);
+
+	document.getElementById("demo").innerHTML = x/y;
+}
+function clear(){
+	var x, y;
+	document.getElementById("first").value='';
+	document.getElementById("second").value='';
+
+}
+
+</script>
+</body>
+</html>

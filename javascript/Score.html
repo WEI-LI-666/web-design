@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ifstatement</title>
+</head>
+<body>
+Enter your score:
+<input id="score" type="text" name="Score">
+<button onclick="score()">Check</button>
+<p id="demo"></p>
+<script>
+	function score() {
+		var x;
+		x = parseInt(document.getElementById("score").value);
+		if(x>59)
+			document.getElementById("demo").innerHTML = "Passed";
+		else
+			document.getElementById("demo").innerHTML = "Failed";
+
+	}
+</script>
+
+</body>
+</html>
