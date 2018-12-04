@@ -1,0 +1,2 @@
+http://blog.infographics.tw/   --internet
+https://github.com/Kyrand       --python
